@@ -1,0 +1,87 @@
+:root {
+   --white-color: #ffffff;
+   --heading-color: #3c3b3d;
+   --text-color: #0a0a0a;
+   --green-color: #124e3b;
+   --footer-color: #fbf9f6;
+}
+
+/* 
+   NOTAS: 1rem equivale a 16px.
+*/
+
+body {
+   background-color: var(--white-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   color: var(--heading-color);
+}
+
+h1 {
+   font-size: 40px;
+   font-weight: bold;
+   font-style: normal;
+   line-height: 48px;
+   letter-spacing: .2px;
+}
+
+h2 {
+   font-weight: 700;
+   font-size: 2rem;
+   line-height: 1.25
+}
+
+h3 {
+   font-weight: 700;
+   font-size: 1.25rem;
+   line-height: 1.4;
+}
+
+h4 {
+   font-size: 1.25rem;
+   font-weight: 700;
+   margin: 1.33rem 0;
+   line-height: 1.5;
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+   color: var(--text-color);
+   font-weight: 400;
+   font-size: 1rem;
+   line-height: 1.5;
+   margin: 1em 0;
+}
+
+ul {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   padding-inline-start: 40px;
+   font: 400;
+}
+
+a {
+   text-decoration: none;
+   color: var(--text-color);
+}
+
+a:hover {
+   color: var(--green-color); 
+}
