@@ -12,11 +12,15 @@
    NOTAS: 1rem equivale a 16px.
 */
 
+html {
+   height: 100%;
+}
+
 body {
    background-color: var(--white-color);
    font-family: 'Poppins', sans-serif;
    margin: 0;
-
+   height: 95%;
 }
 
 h1,
@@ -70,17 +74,6 @@ p {
    margin: 1em 0;
 }
 
-p.nav3 {
-   position: block;
-   margin-top: -40px;
-   font-family: 'Roboto';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 24px;
-   text-align: center;
-   color: #003366;
-}
-
 ul {
    display: flex;
    align-items: center;
@@ -92,39 +85,6 @@ ul {
    font: 400;
 }
 
-ul.nav1 {
-   display: block;
-   width: 400px;
-   padding: 10px;
-}
-
-li.nav2 {
-   padding: 10px;
-   text-align: center;
-}
-
-.nav {
-   position: fixed;
-   background: #0099CC;
-   height: 900px;
-   left: 0px;
-   right: 0px;
-   width: 400px;
-   display: flex;
-   flex-direction: row;
-}
-
-.footer {
-   position: fixed;
-   width: 100%;
-   height: 40px;
-   left: 0px;
-   top: 840px;
-   background: #FF4438;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-
 a {
    text-decoration: none;
    color: var(--text-color);
@@ -134,11 +94,58 @@ a:hover {
    color: var(--green-color);
 }
 
-.background-image {
-   background-image: url("images/mainpage_background.jpg");
-   background-repeat: repeat;
-   background-size: cover;
-   display: absolute;
+.container {
+   display: flex;
+   height: 100%;
+   min-height: 100%;
+   align-items: flex-end;
+   width: 100%;
+}
+
+.nav-container {
+   background: #0099CC;
+   height: 100%;
+   width: 40%;
+}
+
+p.nav3 {
+   position: block;
+   margin-top: -40px;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   text-align: center;
+   color: #003366;
+}
+
+ul.nav1 {
    width: 400px;
-   height: 900px;
+   padding: 10px;
+   display: block;
+}
+
+li.nav2 {
+   padding: 10px;
+   text-align: left;
+}
+
+.background-image-container {
+   background-image: url("images/mainpage_background.jpg");
+   background-size: contain;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex: 0 0 auto;
+   flex-direction: column;
+}
+
+.footer {
+   position: fixed;
+   width: 100%;
+   height: 5%;
+   left: 0px;
+   background: #FF4438;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

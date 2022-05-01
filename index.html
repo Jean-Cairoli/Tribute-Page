@@ -6,30 +6,56 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel=StyleSheet href="index.css" type="text/css" media=screen>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<title>A Tribute Page</title>
 </head>
 
 <body>
 	<main></main>
 
-	<div class="nav">
-		<div>
+	<div class="container">
+		<div class="nav-container">
 			<h1 style="color:white; text-align:center;">Linus Torvalds</h1>
 			<p class="nav3">Linux & Git Developer</p>
 
 			<ul class="nav1">
-				<li class="nav2">Biography</li>
-				<li class="nav2">Achievements</li>
-				<li class="nav2">Favorite Distro</li>
-				<li class="nav2">Popular Distros</li>
+				<li class="nav2"> <i class="fa-solid fa-circle-user"></i> Biography </li>
+				<li class="nav2"> <i class="fa-solid fa-trophy"></i>Achievements </li>
+				<li class="nav2"><i class="fa-solid fa-heart-circle-check"></i> Favorite Distro</li>
+				<li class="nav2"><i class="fa-solid fa-square-poll-vertical"></i> Popular Distros</li>
 			</ul>
 		</div>
-		<div class="background-image">
-			<p>Microsoft isn't evil, they just make really crappy operating systems.</p>
+		<div class="background-image-container">
+			<p style="position: relative; top: 30%; left: 50%; width: 300px; height: 60px;">Microsoft isn't evil,
+				they just make
+				really crappy operating
+				systems.</p>
+		</div>
+
+	</div>
+</body>
+<footer class=" footer">
+	<div class="container">
+		<div
+			style="color: white; font-family: 'Roboto'; width: 30%; float:left; display: flex; justify-content: space-between;margin: 10px;">
+			<span>Terms of Use</span>
+			<span>Privacy Policy</span>
+			<span>Cookie</span>
+			<span>Disclosure</span>
+			<span>Policy</span>
+			<span>Disclaimer</span>
+		</div>
+		<div style="width: 60%;"></div>
+		<div style="width:10%; float:right; display: flex; justify-content: space-between; margin: 10px;">
+			<i class="fa-brands fa-twitter"></i>
+			<i class="fa-brands fa-facebook"></i>
+			<i class="fa-brands fa-youtube"></i>
+			<i class="fa-brands fa-linkedin"></i>
+			<i class="fa-brands fa-github"></i>
 		</div>
 	</div>
-
-</body>
-<footer class="footer"></footer>
+</footer>
 
 </html>
